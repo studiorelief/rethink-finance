@@ -1,7 +1,10 @@
-import { greetUser } from '$utils/greet';
+import './index.css';
+
+import { scrollAnimBenefits, scrollAnimDesign, scrollAnimUseCase } from '$utils/gsap';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  const name = 'John Doe';
-  greetUser(name);
+  scrollAnimDesign();
+  scrollAnimBenefits();
+  scrollAnimUseCase();
 });
